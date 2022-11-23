@@ -61,5 +61,4 @@ FindThirdNumber(number);*/
 Console.WriteLine("Input day of the week: ");
 int dayweek = Convert.ToInt32(Console.ReadLine());
 bool result = FindWeekend(dayweek);
-//int numthrid = FindThirdNumber(number);
 Console.WriteLine($"The {dayweek} day of the week is a {result} day off.");*/
