@@ -58,7 +58,7 @@ FindMinMaxSum(myArray);*/
 }
 void PrintArray(int[]array)
 {
-    Console.Write("The resulting array -> ");
+    Console.Write("The received array -> ");
     for(int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
@@ -102,7 +102,7 @@ PrintArray(InvertArray(myArray));*/
 }
 void PrintArray(int[]array)
 {
-    Console.Write("The resulting array -> ");
+    Console.Write("The received array -> ");
     for(int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
@@ -132,25 +132,25 @@ Console.WriteLine(FindNumber(number, myArray));*/
 //значения которых лежат в отрезке [10,99].
 //[5, 18, 123, 6, 2] -> 1
 
-int[] CreateRandArray(int size)
+/*int[] CreateRandArray(int size)
 {
     int[]newArray = new int [size];
     for(int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().Next(1, 1001);
+        newArray[i] = new Random().Next(0, 201);
     }
     return newArray;
 }
-void PrintArray(int[]array)
+void PrintArray(int[] array)
 {
-    Console.Write("The resulting array -> ");
+    Console.Write("The received array -> ");
     for(int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
-void FindNumberRange(int []array)
+void FindNumberRange(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -161,6 +161,6 @@ void FindNumberRange(int []array)
 }
 Console.WriteLine("Input size ");
 int size = Convert.ToInt32(Console.ReadLine());
-int [] MyArray = CreateRandArray(size);
+int[] MyArray = CreateRandArray(size);
 PrintArray(MyArray);
-FindNumberRange(MyArray);
+FindNumberRange(MyArray);*/
