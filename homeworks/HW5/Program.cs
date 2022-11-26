@@ -78,16 +78,16 @@ FindNumbersOddIndex(MyArray);*/
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
 
-/*nt[] CreateRandArray(int size)
+/*double[] CreateRandArray(int size)
 {
-    int[]newArray = new int [size];
+    double[]newArray = new double [size];
     for(int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().Next(-100, 101);
+        newArray[i] = new Random().NextDouble() * 40 - 20;
     }
     return newArray;
 }
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
     Console.Write("The received array -> ");
     for(int i = 0; i < array.Length; i++)
@@ -96,11 +96,11 @@ void PrintArray(int[] array)
     }
     Console.WriteLine();
 }
-int FindMaxMinDifference(int[] array)
+double FindMaxMinDifference(double[] array)
 {
-    int numMax = 0;
-    int numMin = 0;
-    int difference = 0;
+    double numMax = 0;
+    double numMin = 0;
+    double difference = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if(numMax < array[i]) numMax = array[i];
@@ -114,7 +114,7 @@ int FindMaxMinDifference(int[] array)
 }
 Console.WriteLine("Input size ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] MyArray = CreateRandArray(size);
+double[] MyArray = CreateRandArray(size);
 PrintArray(MyArray);
-int result = FindMaxMinDifference(MyArray);
+double result = FindMaxMinDifference(MyArray);
 Console.WriteLine($"The difference between the maximum and minimum array element is {result}.");*/
