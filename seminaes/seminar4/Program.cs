@@ -33,7 +33,8 @@ Console.WriteLine($"The sum of the numbers from 1 to {number} is {result}.");*/
       num = num / 10;
       count++;
     }
-    for (count = 0; a > 0; count++){
+    for (count = 0; a > 0; count++)
+    {
         a = a / 10;
     }
     return count;
